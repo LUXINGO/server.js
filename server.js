@@ -80,7 +80,7 @@ function adminAuth(req, res, next) {
 /* ================= ADMIN LOGIN ================= */
 
 app.post("/admin/login", (req, res) => {
-  const { email, password } = req.body;
+  const { email, password } = req.body;g
   if (email !== ADMIN_EMAIL || password !== ADMIN_PASSWORD) {
     return res.status(401).send("Invalid credentials");
   }
